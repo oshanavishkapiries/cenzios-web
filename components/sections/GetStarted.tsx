@@ -5,7 +5,7 @@ import Image from 'next/image'
 const GetStarted = () => {
   return (
     <section className="relative py-16 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="myContainer mx-auto px-4">
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-4">
             <Image 
