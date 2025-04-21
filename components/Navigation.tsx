@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from 'next/image';
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,10 +20,12 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <img
+              <Image
                 className="h-12 w-auto"
                 src={navigationData.logo.src}
                 alt={navigationData.logo.alt}
+                width={48}
+                height={48}
               />
             </Link>
           </div>
