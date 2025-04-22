@@ -7,6 +7,12 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'animate-marquee',
+    'animate-marquee-vertical',
+    'data-[state=closed]:animate-slide-up',
+    'data-[state=open]:animate-slide-down'
+  ],
   theme: {
     extend: {
       colors: {

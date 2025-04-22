@@ -1,10 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "cdn3.iconfinder.com",
-      "novasolutionsteam.com",
-      "avatar.vercel.sh",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn3.iconfinder.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'novasolutionsteam.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatar.vercel.sh',
+      },
     ],
   },
 };
