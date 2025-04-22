@@ -48,16 +48,11 @@ export const exploreLinks: NavigationLink[] = [
 ];
 
 export const officeLocations: OfficeLocation[] = [
-  {
-    address: 'Bay 9, Trace Expert City, Colombo, Sri Lanka.',
-    phone: '(+94) 70 210 8867',
-    email: 'info@novasolutionsteam.com'
-  },
-  {
-    address: 'No 608 Waverley Rd, Glen Waverley VIC 3150, Australia',
-    phone: '(+61) 426 370 624',
-    email: 'info@novasolutionsteam.com'
+   {
+    address: '119/A, Werellagena Road, Horana, Sri Lanka.',
+    phone: '(+94) 71 118 6028',
+    email: 'info@cenzios.com'
   }
 ];
 
-export const companyDescription = 'Cenzios offers the Application Development and Digital Solutions across Sri Lanka. We are a professional information technology company that finds the right balance among price, quality, and project requirements.'; 
+export const companyDescription = 'Cenzios IT Solutions provides Application Development and Digital Solutions worldwide. As a professional IT company, we ensure the ideal balance of cost, quality, and project requirements to empower your success.'; 

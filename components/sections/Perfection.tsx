@@ -7,11 +7,10 @@ const Perfection = () => {
     <section className="myContainer">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Our steps to perfection
+        Our Process of Innovation
         </h2>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-          We work on a carefully designed guideline. We follow this procedure to
-          reap you the full benefits of building a perfect software solution.
+        At Cenzios IT Solutions, we combine careful planning with creative diligence to deliver software that exceeds expectations. We engineer excellence at every stage.
         </p>
       </div>
 
