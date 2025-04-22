@@ -1,8 +1,12 @@
-    /** @type {import('next').NextConfig} */
-    const nextConfig = {
-        images: {
-            domains: ['cdn3.iconfinder.com', 'novasolutionsteam.com'],
-        },
-    };
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: [
+      "cdn3.iconfinder.com",
+      "novasolutionsteam.com",
+      "avatar.vercel.sh",
+    ],
+  },
+};
 
-    export default nextConfig;
+export default nextConfig;

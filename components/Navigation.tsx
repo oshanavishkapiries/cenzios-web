@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigationData } from "@/data/navigation";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { useCurrentPath } from "@/hooks/useCurrentPath";
+import { ScrollProgress } from "./eldoraui/scrollprogress";
 
 export default function Navigation() {
   const { y } = useScrollPosition();
@@ -86,7 +87,10 @@ export default function Navigation() {
             </Sheet>
           </div>
         </div>
+
+       
       </div>
+      <ScrollProgress />
     </nav>
   );
 }
