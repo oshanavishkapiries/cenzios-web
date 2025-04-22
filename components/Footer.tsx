@@ -5,7 +5,7 @@ import { socialLinks, quickLinks, exploreLinks, officeLocations, companyDescript
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-16">
+    <footer className="bg-muted py-16">
       <div className="myContainer mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div className="space-y-4">
@@ -20,9 +20,13 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4">
             {socialLinks.map((social) => (
-              <Link key={social.name} href={social.href} className="bg-gray-700 p-2 rounded-md hover:bg-gray-800">
+              <Link 
+                key={social.name} 
+                href={social.href} 
+                className="text-gray-600 hover:text-indigo-600 transition-colors duration-300"
+              >
                 <span className="sr-only">{social.name}</span>
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d={social.icon}/>
                 </svg>
               </Link>

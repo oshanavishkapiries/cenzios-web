@@ -9,7 +9,6 @@ export const navigationData = {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/products", label: "Products" },
-    { href: "/portfolio", label: "Portfolio" },
     { href: "/faq", label: "FAQ" },
     { href: "/careers", label: "Careers" },
   ],

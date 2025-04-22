@@ -1,8 +1,8 @@
 "use client"
-
+import { general } from "@/data/general"
 const FloatingWhatsApp = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/your-phone-number', '_blank');
+    window.open(general.whatsapp, '_blank');
   };
 
   return (

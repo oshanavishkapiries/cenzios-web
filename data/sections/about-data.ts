@@ -6,19 +6,23 @@ export const aboutData = {
   stats: [
     {
       number: "5",
-      label: "Years In the Industry"
+      label: "Years In the Industry",
+      icon: "+"
     },
     {
-      number: "10+",
-      label: "Team members"
+      number: "10",
+      label: "Team members",
+      icon: "+"
     },
     {
-      number: "100%",
-      label: "Satisfaction rate"
+      number: "100",
+      label: "Satisfaction rate",
+      icon: "%"
     },
     {
-      number: "15+",
-      label: "Satisfied Projects"
+      number: "15",
+      label: "Satisfied Projects",
+      icon: "+"
     }
   ],
   history: {

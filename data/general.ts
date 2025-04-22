@@ -2,6 +2,7 @@ export const general = {
     title: "Cenzios",
     description: "Cenzios it solutions",
     logo: "/logo.png",
+    whatsapp: "https://wa.me/94771234567",
     hero: {
         title: "Software Solutions",
         subtitle: "For New Millennia",
