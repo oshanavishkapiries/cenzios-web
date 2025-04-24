@@ -84,7 +84,7 @@ export default function ContactInfo() {
             </div>
           </div>
 
-          {/* Hours of Operation */}
+         {/*Hours of Operation*/}
           <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
               {contactData.hours.title}

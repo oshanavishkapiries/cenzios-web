@@ -7,9 +7,10 @@ export interface Product {
   category: string;
 }
 
+
 export const hero = {
-  title: "Our Products",
-  description: "Discover our innovative solutions designed to transform your business"
+  title: "Our Services",
+  description: "We're Not Just Another Software Solutions Company We focus on bringing you the best product, always going the extra mile to fulfill your needs."
 }
 
 export const products: Product[] = [
@@ -52,4 +53,5 @@ export const products: Product[] = [
     ],
     category: "Category 1"
   }
-]; 
+];
+ 

@@ -1,11 +1,11 @@
 export const aboutData = {
   hero: {
-    title: "Giving you the best software solutions on the market since 2018.",
-    description: "From the ground up we were able to deliver you the best quality software solutions. Because we were able to gather a team of experts in the industry from the start."
+    title: "Delivering Excellence Since 2023",
+    description: "From day one, we've been committed to providing top-quality software solutions. By assembling a team of industry experts from the very start, we've ensured innovation, reliability, and excellence in every project.."
   },
   stats: [
     {
-      number: "5",
+      number: "2",
       label: "Years In the Industry",
       icon: "+"
     },
@@ -20,18 +20,24 @@ export const aboutData = {
       icon: "%"
     },
     {
-      number: "15",
+      number: "10",
       label: "Satisfied Projects",
       icon: "+"
     }
   ],
   history: {
     title: "Our History",
-    description: "At first Nova Solutions was just an idea to revolutionize the IT industry with a collective of young talents in Sri Lanka. This firm was built to achieve that dream. Our aspiration was to give the best solution to our consumer's problem that can withstand the test of time. Looking at our achievements now, we can happily say we have been nothing but successful till now. After 3 plus years of experience, we managed to build a worldwide client base and also valuable business relationships. Our progress have been in an upward trajectory till now and it will continue to do so."
+    description: "Cenzios IT Solutions began as a vision — to redefine the digital landscape through the power of innovative, data-driven software solutions, crafted by a passionate team of young talents in Sri Lanka. What started as an idea quickly evolved into a firm built on precision, innovation, and intelligence. From day one, our mission has been to deliver strategic software solutions that not only solve real business problems but also stand the test of time. Today, with over three years of experience, we are proud to have cultivated a global client base and forged lasting business relationships. Our journey has been on a consistent upward path — and we're just getting started.",
   },
+
+  vision: {
+    title: "Our Vision",
+    description: "To be a global leader in delivering intelligent, future-ready software solutions that empower businesses to grow, innovate, and thrive in a digitally driven world.",
+  },
+
   mission: {
     title: "Our Mission",
-    description: "Here at Nova Solutions we bring an unmatchable excellence to your products and platforms. Your satisfaction is our main priority.",
+    description: "At Cenzios IT Solutions, we help businesses unlock their full potential through cutting-edge technology and tailor-made software solutions. With a focus on innovation, precision, and collaboration, we deliver strategic digital products that drive sustainable growth and long-term success.",
     points: [
       "We set achievable success oriented goals.",
       "We overcome problems with creative solutions.",
@@ -51,31 +57,31 @@ export const aboutData = {
   },
   journey: [
     {
-      date: "2018 December 21st",
+      date: "2023",
       title: "Foundation",
-      description: "Nova Solutions was founded by Akhila Wijesundara, Pasindu Sadaruwan, Dilshan Ramesh and Nishal Shehan. A team of young entrepreneurs from Sri Lanka who aspired to fill the voids of current software solutions market."
+      description: "Cenzios IT Solutions was born out of a shared vision to deliver intelligent, high-impact software solutions. Founded by a team of innovative Sri Lankan tech professionals, our mission was clear from the start: to engineer strategic digital products that drive business growth and long-term success."
     },
     {
-      date: "2020 August 5th",
+      date: "2024",
       title: "Global Success",
-      description: "After the nonstop grind and the hard work of the talented team, Nova Solutions were able to achieve success at a global stage in just three years. Including countries like Australia, Japan and USA."
+      description: "Thanks to our commitment to quality and innovation, Cenzios quickly earned recognition on the global stage. Our digital solutions began reaching clients in regions such as the United States, Europe, and Southeast Asia — all within just two years of operation."
     },
     {
-      date: "2021 August 20th",
+      date: "2025",
       title: "Reaching new heights",
-      description: "We decided to expand our horizons further by moving into a new work space for our employees. On top of that we did a whole rebranding of our enterprise to move in with the new competition and to help spread our message across"
+      description: "With an expanding remote-first team and growing client base, we embraced a full brand evolution to reflect our expanding capabilities. The Cenzios brand now stands for bold, visionary technology — crafted with precision, collaboration, and a clear focus on impact."
     }
   ],
   whyChooseUs: {
-    title: "Why Nova Solutions?",
-    description: "Nova Solutions is a dedicated high functioning software company that can cater your ultimate software needs. If you're wondering why should you choose us let us make it easier for you. Here are the ultimate 3 reasons you should consider.",
+    title: "Why Cenzios?",
+    description: "We are a dedicated high functioning software company that can cater your ultimate software needs. If you're wondering why should you choose us let us make it easier for you. Here are the ultimate 3 reasons you should consider.",
     reasons: [
       {
         title: "Multi Talented Experts",
         description: "We don't have mediocre people here. Your project will be handled by experienced professionals from the start to the end. Our people are dedicated, sharp and always open for new challenges."
       },
       {
-        title: "Number one customer service",
+        title: "Customer Service is our Top Priority",
         description: "We have one of the friendliest working spaces in the business. That's why we're the best at satisfying customers. We always go the extra mile to ensure your fulfillment and satisfaction."
       },
       {

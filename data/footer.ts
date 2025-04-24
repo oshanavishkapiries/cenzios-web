@@ -49,10 +49,15 @@ export const exploreLinks: NavigationLink[] = [
 
 export const officeLocations: OfficeLocation[] = [
    {
-    address: '119/A, Werellagena Road, Horana, Sri Lanka.',
+    address: '119/A, Werellahena Road, Horana, Sri Lanka.',
+    phone: '(+94) 71 118 6028',
+    email: 'info@cenzios.com'
+  },
+  {
+    address: '392/E, Gohagoda Road, Katugasthota, kandy, Sri Lanka.',
     phone: '(+94) 71 118 6028',
     email: 'info@cenzios.com'
   }
 ];
 
-export const companyDescription = 'Cenzios IT Solutions provides Application Development and Digital Solutions worldwide. As a professional IT company, we ensure the ideal balance of cost, quality, and project requirements to empower your success.'; 
+export const companyDescription = 'Cenzios IT Solutions provides Application Development and Digital Solutions worldwide. As a professional IT company, we ensure the ideal balance of cost, quality, and project requirements to empower your success.';
