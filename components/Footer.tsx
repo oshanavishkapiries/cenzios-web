@@ -5,7 +5,7 @@ import { socialLinks, quickLinks, exploreLinks, officeLocations, companyDescript
 
 const Footer = () => {
   return (
-    <footer className="w-full mb-12 bg-gradient-to-br bg-secondary max-w-7xl mx-auto text-foreground pt-0 rounded-lg overflow-hidden">
+    <footer className="w-full m bg-gradient-to-br bg-secondary text-foreground pt-0">
       {/* Top CTA Section */}
       <div className="w-full rounded-lg flex flex-col md:flex-row">
         <div className="w-full p-10 bg-primary md:w-1/2 text-center">
@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Links Section */}
-      <div className="mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="myContainer px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Services */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>

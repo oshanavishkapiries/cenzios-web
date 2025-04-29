@@ -32,7 +32,6 @@ const Hero = () => {
             <div className="flex-1  text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 {hero.title}
-                <span className="block">{hero.subtitle}</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-100 mb-8">
                 {hero.description}

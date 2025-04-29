@@ -26,14 +26,9 @@ export const aboutData = {
     }
   ],
 
-  history: {
-    title: "Our History",
-    description: "Cenzios IT Solutions began as a vision — to redefine the digital landscape through the power of innovative, data-driven software solutions, crafted by a passionate team of young talents in Sri Lanka. What started as an idea quickly evolved into a firm built on precision, innovation, and intelligence. From day one, our mission has been to deliver strategic software solutions that not only solve real business problems but also stand the test of time. Today, with over three years of experience, we are proud to have cultivated a global client base and forged lasting business relationships. Our journey has been on a consistent upward path — and we're just getting started.",
-  },
-
   vision: {
     title: "Our Vision",
-    description: "To be a global leader in delivering intelligent, future-ready software solutions that empower businesses to grow, innovate, and thrive in a digitally driven world.",
+    description: "Cenzios IT Solutions began as a vision — to redefine the digital landscape through the power of innovative, data-driven software solutions, crafted by a passionate team of young talents in Sri Lanka. What started as an idea quickly evolved into a firm built on precision, innovation, and intelligence. From day one, our mission has been to deliver strategic software solutions that not only solve real business problems but also stand the test of time. Today, with over three years of experience, we are proud to have cultivated a global client base and forged lasting business relationships. Our journey has been on a consistent upward path — and we're just getting started.",
   },
 
   mission: {
