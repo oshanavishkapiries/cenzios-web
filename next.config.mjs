@@ -14,6 +14,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'avatar.vercel.sh',
       },
+      {
+        protocol: 'https',
+        hostname: 'syntelligenceit.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.istockphoto.com',
+      },
     ],
   },
 };

@@ -25,9 +25,9 @@ export const aboutData = {
       icon: "+"
     }
   ],
-  history: {
-    title: "Our History",
-    description: "At first Nova Solutions was just an idea to revolutionize the IT industry with a collective of young talents in Sri Lanka. This firm was built to achieve that dream. Our aspiration was to give the best solution to our consumer's problem that can withstand the test of time. Looking at our achievements now, we can happily say we have been nothing but successful till now. After 3 plus years of experience, we managed to build a worldwide client base and also valuable business relationships. Our progress have been in an upward trajectory till now and it will continue to do so."
+  vision: {
+    title: "Our Vision",
+    description: "Our vision is to be a leading force in digital innovation, creating transformative software solutions that empower businesses and individuals worldwide. We strive to be at the forefront of technological advancement, setting new standards for excellence and innovation in the software industry."
   },
   mission: {
     title: "Our Mission",

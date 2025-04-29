@@ -4,7 +4,7 @@ export default function ContactInfo() {
   return (
     <section className="py-16 bg-white myContainer">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Office Locations */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
             <h2 className="text-xl font-bold text-gray-900 mb-4">
@@ -81,21 +81,6 @@ export default function ContactInfo() {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Hours of Operation */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">
-              {contactData.hours.title}
-            </h2>
-            <div className="space-y-3">
-              {contactData.hours.schedule.map((item, index) => (
-                <div key={index} className="flex justify-between">
-                  <span className="font-medium text-gray-900">{item.days}</span>
-                  <span className="text-gray-600">{item.hours}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

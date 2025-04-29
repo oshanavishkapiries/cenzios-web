@@ -11,10 +11,15 @@ export default function Counter({
   direction?: 'up' | 'down';
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const motionValue = useMotionValue(direction === 'down' ? value : 0);
+  const startValue = direction === 'down'
+    ? value
+    : value > 20
+      ? value - 10
+      : 0;
+  const motionValue = useMotionValue(startValue);
   const springValue = useSpring(motionValue, {
-    damping: 100,
-    stiffness: 100,
+    damping: 200,
+    stiffness: 500,
   });
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 

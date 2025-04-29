@@ -1,17 +1,17 @@
 import { aboutData } from "../../../data/sections/about-data";
 
-export default function HistoryMission() {
+export default function VisionMission() {
   return (
     <section className="py-16 bg-gray-50 myContainer">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12">
-          {/* History */}
+          {/* Vision */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              {aboutData.history.title}
+              {aboutData.vision.title}
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              {aboutData.history.description}
+              {aboutData.vision.description}
             </p>
           </div>
 

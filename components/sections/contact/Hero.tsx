@@ -2,8 +2,17 @@ import { contactData } from "../../../data/sections/contact-data";
 
 export default function Hero() {
   return (
-    <section className="relative h-[350px] flex items-center justify-center py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-      <div className="container mx-auto px-4">
+    <section className="relative h-[350px] flex items-center justify-center py-20 bg-gradient-to-br from-blue-900/90 via-[#052266]/90 to-blue-900/90 text-white">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "url('/sub-hero-bg.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+      <div className="absolute inset-0 z-0 bg-black/50" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {contactData.hero.title}

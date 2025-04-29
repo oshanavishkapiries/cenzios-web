@@ -33,48 +33,67 @@ export const contactData = {
       ]
     }
   },
-  hours: {
-    title: "Hours of Operation",
-    schedule: [
-      {
-        days: "Monday - Friday",
-        hours: "09:00 - 06:00"
-      },
-      {
-        days: "Sunday & Saturday",
-        hours: "Closed"
-      }
-    ]
-  },
   form: {
-    title: "Get in Touch",
-    description: "Let's have a chat about your Future",
-    buttonText: "Send Message",
+    title: "Schedule a Free Consultation",
+    description: "Partner with Us for Comprehensive IT",
+    subDescription: "We're happy to answer any questions you may have and help you determine which of our services best fit your needs.",
+    buttonText: "Submit",
     fields: [
       {
-        label: "Full Name",
+        label: "First name",
         type: "text",
-        placeholder: "Enter your full name"
+        placeholder: "Enter your first name",
+        required: true,
+        gridCols: "col-span-1"
       },
       {
-        label: "Email",
+        label: "Last name",
+        type: "text",
+        placeholder: "Enter your last name",
+        required: true,
+        gridCols: "col-span-1"
+      },
+      {
+        label: "Company / Organization",
+        type: "text",
+        placeholder: "Enter your company name",
+        required: true,
+        gridCols: "col-span-2"
+      },
+      {
+        label: "Company email",
         type: "email",
-        placeholder: "Enter your email address"
+        placeholder: "Enter your company email",
+        required: true,
+        gridCols: "col-span-2"
       },
       {
         label: "Phone",
         type: "tel",
-        placeholder: "Enter your phone number"
+        placeholder: "Enter your phone number",
+        required: true,
+        gridCols: "col-span-2"
       },
       {
-        label: "Subject",
-        type: "text",
-        placeholder: "Enter the subject of your message"
+        label: "How Can We Help You?",
+        type: "select",
+        placeholder: "Select Option",
+        required: true,
+        gridCols: "col-span-2",
+        options: [
+          "Web Development",
+          "Mobile App Development",
+          "Custom Software",
+          "IT Consulting",
+          "Other"
+        ]
       },
       {
         label: "Message",
         type: "textarea",
-        placeholder: "Enter your message"
+        placeholder: "To better assist you, please describe how we can help...",
+        required: true,
+        gridCols: "col-span-2"
       }
     ]
   }
