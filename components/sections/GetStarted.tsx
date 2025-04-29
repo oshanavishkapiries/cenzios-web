@@ -17,9 +17,9 @@ const GetStarted = () => {
             />
           </div>
           <div className="w-full md:w-1/2 px-4">
-            <h2 className="text-4xl font-bold mb-4">We Like to Start Your Project With Us</h2>
+            <h2 className="text-4xl font-bold mb-4">We Like To Achieve Your Dream With Us</h2>
             <p className="text-gray-600 mb-8">
-              If you want to create a new website for your business, do not hesitate to contact us today. We have created you to provide all types of services on the website.
+            If you are Ready to turn your business dreams into reality, Don’t hesitate to contact us today. We're here to empower your vision with innovative software solutions tailored to your success.
             </p>
             <Link href="/contact">
               <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-primary/70 transition-colors">

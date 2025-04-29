@@ -1,18 +1,23 @@
+import { Description } from "@radix-ui/react-dialog";
+import { describe } from "node:test";
+
 export const contactData = {
   hero: {
-    title: "Contact Us",
-    description: "We are more than happy to allocate some time for you. We are here if you want to share a conversation and talk about building you a solution."
+    title: "We are more than happy to have a conversation with you..",
+    //description: "We are more than happy to have a conversation with you.."
   },
   offices: {
     title: "Our Corporate Office",
     locations: [
-      {
-        country: "Australia",
-        address: "608 Waverley Rd, Glen Waverley VIC 3150, Australia"
-      },
+      
       {
         country: "Sri Lanka",
-        address: "No 406/07, Hokandara North, Hokandara, Sri Lanka"
+        address: "119/A, Werellahena Road, Horana, Sri Lanka"
+      }
+       ,
+      {
+        country: "Sri Lanka",
+        address: '392/E, Gohagoda Road, Katugasthota, kandy, Sri Lanka.',
       }
     ]
   },
@@ -21,15 +26,13 @@ export const contactData = {
     email: {
       label: "E-mail",
       addresses: [
-        "info@novasolutionsteam.com.au",
-        "info@novasolutionsteam.com"
+        "info@novasoluticenzios.com",
       ]
     },
     phone: {
       label: "Mobile",
       numbers: [
-        "(+94) 70 210 8867",
-        "(+61) 426 370 624"
+        "(+94) 71 118 6028",
       ]
     }
   },
@@ -45,6 +48,7 @@ export const contactData = {
         placeholder: "Enter your first name",
         required: true,
         gridCols: "col-span-1"
+
       },
       {
         label: "Last name",

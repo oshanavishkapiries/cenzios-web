@@ -7,8 +7,9 @@ export interface Product {
   category: string;
 }
 
+
 export const hero = {
-  title: "Our Services",
+  title: "Our Products",
   description: "Discover our innovative solutions designed to transform your business"
 }
 
@@ -52,4 +53,5 @@ export const products: Product[] = [
     ],
     category: "Category 1"
   }
-]; 
+];
+ 

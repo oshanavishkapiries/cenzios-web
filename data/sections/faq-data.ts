@@ -8,8 +8,8 @@ export const faqData = {
       title: "General Questions",
       questions: [
         {
-          question: "What services does Nova Solutions offer?",
-          answer: "Nova Solutions offers a comprehensive range of software development services including web development, mobile app development, custom software solutions, and IT consulting. We specialize in creating tailored solutions to meet your specific business needs."
+          question: "What services does Cenzios Solutions offer?",
+          answer: "Cenzios Solutions offers a comprehensive range of software development services including web development, mobile app development, custom software solutions, and IT consulting. We specialize in creating tailored solutions to meet your specific business needs."
         },
         {
           question: "How long does it take to complete a project?",

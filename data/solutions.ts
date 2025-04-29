@@ -8,25 +8,25 @@ export interface Solution {
 export const solutions: Solution[] = [
   {
     title: "Web development",
-    description: "We can deliver the best B2B and B2C web solutions island has to offer. Providing unique and functional web platforms with our experts is our passion.",
+    description: "We deliver top-tier B2B and B2C web solutions across the island, crafting unique and functional web platforms with our expert team—our passion lies in innovation and excellence.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/coding-512.png",
     link: "/services/web-development"
   },
   {
     title: "Mobile App Development",
-    description: "Either your need is native android or cross platform, we got you covered. Our team can provide state of the art mobile applications with all the capabilities you need.",
+    description: "Whether you need a native Android app or a cross-platform solution, we've got you covered. Our team delivers cutting-edge mobile applications equipped with all the features you require.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/smartphone-512.png",
     link: "/services/mobile-development"
   },
   {
-    title: "Research & Development",
-    description: "Research and development is a hefty task with a need of undivided commitment. That's why here at Nova we have goal driven professionals in our arsenal to handle those kinds of complex projects for you.",
+    title: "Custom Software Development",
+    description: "Whether you need a data-driven web platform or a sleek mobile app, we engineer scalable, secure, and future-proof solutions. From concept to deployment, our full-stack developers and architects transform ideas into high-performance tools.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/web_developmrnt-512.png",
     link: "/services/research-development"
   },
   {
-    title: "Cloud Solutions",
-    description: "Leverage the power of cloud computing with our expert cloud solutions. We help businesses scale efficiently and securely in the digital landscape.",
+    title: "Enterprise Technology Solutions",
+    description: "Tackle complex business challenges with ERP systems, AI-driven analytics platforms, and legacy software modernization. We build robust architectures designed for scalability, compliance, and seamless integration.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/layer-512.png",
     link: "/services/cloud-solutions"
   }

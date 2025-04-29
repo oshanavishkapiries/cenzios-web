@@ -1,11 +1,11 @@
 export const aboutUsData = {
   title: "ABOUT US",
-  heading: "Giving you the absolute best since 2018",
-  description: "From the ground up we were able to deliver you the best quality software solutions. Because we were able to gather a team of experts in the industry from the start.",
+  heading: "Delivering Excellence Since 2023",
+  description: "From day one, we've been committed to providing top-quality software solutions. By assembling a team of industry experts from the very start, we've ensured innovation, reliability, and excellence in every project.",
   stats: [
     {
       icon: "check",
-      value: "5 Years",
+      value: "2 Years",
       label: "In the Industry",
       gradient: {
         from: "#6366f1",
@@ -32,7 +32,7 @@ export const aboutUsData = {
     },
     {
       icon: "projects",
-      value: "15+",
+      value: "10+",
       label: "Satisfied Projects",
       gradient: {
         from: "#f97316",
@@ -40,5 +40,5 @@ export const aboutUsData = {
       }
     }
   ],
-  footerText: "Our team worked with prime businesses and companies to build their platforms and form quality answers to their problems. Nova Solutions managed to build a satisfied client base not just local but around the globe."
+  footerText: "Our team has collaborated with leading businesses and companies to develop their platforms and deliver high-quality solutions to their challenges. Cenzios has built a strong, satisfied client base, both locally and globally"
 } 
