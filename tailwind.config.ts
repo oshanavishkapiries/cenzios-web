@@ -8,10 +8,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
-    'animate-marquee',
-    'animate-marquee-vertical',
-    'data-[state=closed]:animate-slide-up',
-    'data-[state=open]:animate-slide-down'
+    "animate-marquee",
+    "animate-marquee-vertical",
+    "data-[state=closed]:animate-slide-up",
+    "data-[state=open]:animate-slide-down",
   ],
   theme: {
     extend: {

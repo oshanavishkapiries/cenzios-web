@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { AlertCircle } from "lucide-react";
+import { IoAlertCircle } from "react-icons/io5";
 import {
   Tooltip,
   TooltipContent,
@@ -56,14 +56,16 @@ const OurSolutions = () => {
                           className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-300"
                         >
                           View Details
-                          <AlertCircle className="h-4 w-4" />
+                          <IoAlertCircle className="h-6 w-6 text-primary" />
                         </Button>
                       </TooltipTrigger>
-                      <TooltipContent 
-                        side="bottom" 
+                      <TooltipContent
+                        side="bottom"
                         className="max-w-[250px] p-3 bg-white/95 backdrop-blur-sm border border-gray-100 shadow-lg rounded-lg"
                       >
-                        <p className="text-sm text-gray-700">{solution.description}</p>
+                        <p className="text-sm text-gray-700">
+                          {solution.description}
+                        </p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>

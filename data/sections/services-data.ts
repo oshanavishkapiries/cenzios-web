@@ -9,7 +9,7 @@ export interface Product {
 
 
 export const hero = {
-  title: "Our Products",
+  title: "Our Services",
   description: "Discover our innovative solutions designed to transform your business"
 }
 

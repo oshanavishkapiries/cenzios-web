@@ -3,7 +3,6 @@ import GetStarted from "@/components/sections/GetStarted";
 import Hero from "@/components/sections/Hero";
 import OurSolutions from "@/components/sections/OurSolutions";
 import Perfection from "@/components/sections/Perfection";
-import { Reviews } from "@/components/sections/Reviews";
 export default function Home() {
   return (
     <section>
@@ -12,7 +11,6 @@ export default function Home() {
       <Aboutus />
       <Perfection />
       <GetStarted />
-      <Reviews />
     </section>
   );
 }

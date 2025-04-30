@@ -1,4 +1,4 @@
-import { products } from "../../../data/sections/product-data";
+import { products } from "../../../data/sections/services-data";
 import ProductCard from "./ProductCard";
 
 export default function ProductGrid() {
@@ -13,4 +13,4 @@ export default function ProductGrid() {
       </div>
     </section>
   );
-} 
+}

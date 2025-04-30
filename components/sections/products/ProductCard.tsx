@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Product } from "../../../data/sections/product-data";
+import { Product } from "../../../data/sections/services-data";
 
 interface ProductCardProps {
   product: Product;
@@ -42,4 +42,4 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
     </div>
   );
-} 
+}

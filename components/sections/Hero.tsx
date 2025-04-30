@@ -1,28 +1,22 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { general } from "@/data/general";
-import Image from "next/image";
-//import Background from "../eldoraui/novatrixbg";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import heroAnimation from "@/public/hero.json";
 
 const Hero = () => {
   const { hero } = general;
 
   return (
-    <section className="relative w-full h-[90vh] overflow-hidden">
-      {/* Background Layer */}
-      <div className="absolute inset-0 w-full h-full">
-      {/* <Background /> */}
-        <Image
-          src="https://syntelligenceit.com/wp-content/uploads/2024/11/group-people-working-team-2048x1365.jpg"
-          alt="Team working together"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+    <section className="relative w-full h-screen overflow-hidden">
+      <div className="matrix-effect absolute top-0 left-0 w-full h-full"></div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-transparent to-transparent"></div>
+      {/* Background Layer */}
+      <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black to-blue-900/50"></div>
 
       {/* Content Layer */}
       <div className="relative h-full z-10">
@@ -38,15 +32,22 @@ const Hero = () => {
               </p>
               <Link
                 href={hero.buttonLink}
-                className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors"
+                className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-primary rounded-lg hover:bg-indigo-700 transition-colors"
               >
                 {hero.buttonText}
               </Link>
             </div>
 
-            {/* Right content - if needed */}
-            <div className="flex-1 relative">
-              <div className="relative w-full aspect-square"></div>
+            {/* Right content - Lottie Animation */}
+            <div className="hidden md:flex-1 relative">
+              <div className="relative w-full aspect-square">
+                <Lottie
+                  animationData={heroAnimation}
+                  loop={true}
+                  autoplay={true}
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
             </div>
           </div>
         </div>

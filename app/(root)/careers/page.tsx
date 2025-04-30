@@ -1,15 +1,14 @@
-import Hero from "@/components/sections/careers/Hero";
 import WhyWorkWithUs from "@/components/sections/careers/WhyWorkWithUs";
 import OpenPositions from "@/components/sections/careers/OpenPositions";
-//import ApplicationForm from "@/components/sections/careers/ApplicationForm";
+import { careersData } from "@/data/sections/careers-data";
+import SectionsHero from "@/components/sections/SectionsHero";
 
 export default function Careers() {
   return (
     <main>
-      <Hero />
+      <SectionsHero title={careersData.hero.title} description={careersData.hero.description} />
       <WhyWorkWithUs />
       <OpenPositions />
-      {/* <ApplicationForm /> */}
     </main>
   );
 } 

@@ -1,7 +1,7 @@
 export const careersData = {
   hero: {
     title: "Join Our Team",
-    description: "At Cenzios IT Solutions, we offer one of the friendliest work environments, with exciting internship opportunities and competitive compensation. You'll have the chance to collaborate with some of the best professionals in the industry and gain valuable knowledge. We’re looking for emerging talent and industry experts eager to explore the field and gain hands-on experience with us. If you're interested in joining us on this journey, we'd be thrilled to review your work and offer you the opportunity to become a part of the Cenzios IT Solutions family."
+    description: "Cenzios IT Solutions offers a supportive work environment with exciting internships and competitive pay. We welcome both emerging talent and industry experts to gain hands-on experience and collaborate with top professionals. If you're interested, we’d love to review your work and consider you for our team."
   },
   intro: {
     title: "Why Work With Us",

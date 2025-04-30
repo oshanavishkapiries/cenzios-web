@@ -1,4 +1,4 @@
-import { link } from "fs";
+
 
 export const navigationData = {
   logo: {
@@ -8,7 +8,7 @@ export const navigationData = {
   mainLinks: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/products", label: "Products" },
+    { href: "/services", label: "Services" },
     { href: "/faq", label: "FAQ" },
     { href: "/careers", label: "Careers" },
   ],
