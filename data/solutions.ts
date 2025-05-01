@@ -8,26 +8,30 @@ export interface Solution {
 export const solutions: Solution[] = [
   {
     title: "Web development",
-    description: "We deliver top-tier B2B and B2C web solutions across the island, crafting unique and functional web platforms with our expert team—our passion lies in innovation and excellence.",
+    description:
+      "Expert B2B and B2C web solutions with innovative, functional platforms tailored to your needs.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/coding-512.png",
-    link: "/services/web-development"
+    link: "/services/web-development",
   },
   {
     title: "Mobile App Development",
-    description: "Whether you need a native Android app or a cross-platform solution, we've got you covered. Our team delivers cutting-edge mobile applications equipped with all the features you require.",
+    description:
+      "Native Android and cross-platform mobile apps with cutting-edge features and seamless performance.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/smartphone-512.png",
-    link: "/services/mobile-development"
+    link: "/services/mobile-development",
   },
   {
     title: "Custom Software Development",
-    description: "Whether you need a data-driven web platform or a sleek mobile app, we engineer scalable, secure, and future-proof solutions. From concept to deployment, our full-stack developers and architects transform ideas into high-performance tools.",
+    description:
+      "Scalable, secure software solutions from concept to deployment, built by expert full-stack developers.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/web_developmrnt-512.png",
-    link: "/services/research-development"
+    link: "/services/research-development",
   },
   {
     title: "Enterprise Technology Solutions",
-    description: "Tackle complex business challenges with ERP systems, AI-driven analytics platforms, and legacy software modernization. We build robust architectures designed for scalability, compliance, and seamless integration.",
+    description:
+      "ERP systems, AI analytics, and legacy modernization with scalable, compliant architectures.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/layer-512.png",
-    link: "/services/cloud-solutions"
-  }
-]; 
+    link: "/services/cloud-solutions",
+  },
+];

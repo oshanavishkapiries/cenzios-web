@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { IoAlertCircle } from "react-icons/io5";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+// import { IoAlertCircle } from "react-icons/io5";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
 import { solutions } from "@/data/solutions";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 const OurSolutions = () => {
   return (
@@ -46,29 +46,10 @@ const OurSolutions = () => {
                 <h3 className="text-xl font-semibold mb-3 text-center text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
                   {solution.title}
                 </h3>
-                <div className="text-center">
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors duration-300"
-                        >
-                          View Details
-                          <IoAlertCircle className="h-6 w-6 text-primary" />
-                        </Button>
-                      </TooltipTrigger>
-                      <TooltipContent
-                        side="bottom"
-                        className="max-w-[250px] p-3 bg-white/95 backdrop-blur-sm border border-gray-100 shadow-lg rounded-lg"
-                      >
-                        <p className="text-sm text-gray-700">
-                          {solution.description}
-                        </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                <div className="absolute inset-0 bg-white/95 backdrop-blur-sm p-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-sm text-gray-700 text-center">
+                    {solution.description}
+                  </p>
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />

@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
 
             {/* Right content - Lottie Animation */}
-            <div className="flex-1 relative">
+            <div className="hidden lg:flex flex-1 relative">
               <div className="relative w-full aspect-square">
                 <Lottie
                   animationData={heroAnimation}
