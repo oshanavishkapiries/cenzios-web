@@ -20,7 +20,7 @@ export const contactData = {
     title: "Contact",
     email: {
       label: "E-mail",
-      addresses: ["info@novasoluticenzios.com"],
+      addresses: ["info@cenzios.com"],
     },
     phone: {
       label: "Mobile",

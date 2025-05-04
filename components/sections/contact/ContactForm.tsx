@@ -98,7 +98,7 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 {contactData.form.fields.map((field, index) => (
-                  <div key={index} className={field.gridCols}>
+                  <div key={index} className={field.type === "textarea" ? "col-span-2" : field.gridCols}>
                     <label
                       htmlFor={field.label.toLowerCase().replace(/\s+/g, '-')}
                       className="block text-sm font-medium text-gray-700 mb-1"
@@ -112,7 +112,7 @@ export default function ContactForm() {
                         name={field.label.toLowerCase().replace(/\s+/g, '-')}
                         placeholder={field.placeholder}
                         rows={4}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-sm"
                         value={formData[field.label.toLowerCase().replace(/\s+/g, '-') as keyof typeof formData]}
                         onChange={handleChange}
                         required={field.required}
@@ -121,7 +121,7 @@ export default function ContactForm() {
                       <select
                         id={field.label.toLowerCase().replace(/\s+/g, '-')}
                         name={field.label.toLowerCase().replace(/\s+/g, '-')}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-sm"
                         value={formData[field.label.toLowerCase().replace(/\s+/g, '-') as keyof typeof formData]}
                         onChange={handleChange}
                         required={field.required}
@@ -139,7 +139,7 @@ export default function ContactForm() {
                         id={field.label.toLowerCase().replace(/\s+/g, '-')}
                         name={field.label.toLowerCase().replace(/\s+/g, '-')}
                         placeholder={field.placeholder}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-sm"
                         value={formData[field.label.toLowerCase().replace(/\s+/g, '-') as keyof typeof formData]}
                         onChange={handleChange}
                         required={field.required}
@@ -148,6 +148,8 @@ export default function ContactForm() {
                   </div>
                 ))}
               </div>
+
+              
 
               <button
                 type="submit"

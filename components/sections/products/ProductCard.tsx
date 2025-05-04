@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Product } from "../../../data/sections/services-data";
+import { Product } from "../../../data/sections/product-data";
 
 interface ProductCardProps {
   product: Product;

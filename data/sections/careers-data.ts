@@ -42,17 +42,11 @@ export const careersData = {
         description: "Help ensure the quality of our products through systematic testing and quality assurance processes."
       },
       {
-        title: "Intern - Full Stack Software Engineer",
+        title: "Intern - Frontend Developer",
         type: "Internship",
         location: "Remote",
         description: "Work on web development projects using modern technologies and frameworks."
       },
-      {
-        title: "UI/UX Designer",
-        type: "Full-time",
-        location: "Remote",
-        description: "Create beautiful and intuitive user interfaces for our clients' applications."
-      }
     ]
   },
   application: {

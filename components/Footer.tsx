@@ -15,7 +15,7 @@ const Footer = () => {
       {/* Top CTA Section */}
 
       <div className="w-full rounded-lg flex flex-col md:flex-row">
-        <div className="w-full p-10 bg-primary md:w-1/2 text-center flex flex-col items-center">
+        <div className="w-full p-10 bg-primary md:w-1/2 text-center flex flex-col justify-end items-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-2 text-primary-foreground">
             Let&apos;s Connect
           </h2>
@@ -29,8 +29,8 @@ const Footer = () => {
             </span>
           </Link>
         </div>
-        <div className="w-full p-10 bg-blue-900 md:w-1/2 text-white text-center flex flex-col items-center">
-          <div>
+        <div className="w-full p-10 bg-blue-900 md:w-1/2 text-center flex flex-col justify-end items-center"> 
+          <div className="text-primary-foreground">
             <span className="block text-sm">Email Us</span>
             <a
               href={`mailto:${officeLocations[0].email}`}
@@ -39,7 +39,7 @@ const Footer = () => {
               {officeLocations[0].email}
             </a>
           </div>
-          <div className="my-4">
+          <div className="my-4 text-primary-foreground">
             <span className="block text-sm">Call Us</span>
             <span className="text-lg font-semibold">
               {officeLocations[0].phone}

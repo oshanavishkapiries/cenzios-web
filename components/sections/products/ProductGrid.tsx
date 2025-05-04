@@ -1,4 +1,4 @@
-import { products } from "../../../data/sections/services-data";
+import { products } from "../../../data/sections/product-data";
 import ProductCard from "./ProductCard";
 
 export default function ProductGrid() {

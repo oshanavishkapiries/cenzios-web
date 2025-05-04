@@ -2,6 +2,7 @@ export interface Solution {
   title: string;
   description: string;
   icon: string;
+  image: string;
   link: string;
 }
 
@@ -11,6 +12,7 @@ export const solutions: Solution[] = [
     description:
       "Expert B2B and B2C web solutions with innovative, functional platforms tailored to your needs.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/coding-512.png",
+    image: "https://plus.unsplash.com/premium_photo-1661373704604-7c4d230c8928?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9iaWxlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     link: "/services/web-development",
   },
   {
@@ -18,6 +20,7 @@ export const solutions: Solution[] = [
     description:
       "Native Android and cross-platform mobile apps with cutting-edge features and seamless performance.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/smartphone-512.png",
+    image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     link: "/services/mobile-development",
   },
   {
@@ -25,6 +28,7 @@ export const solutions: Solution[] = [
     description:
       "Scalable, secure software solutions from concept to deployment, built by expert full-stack developers.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/web_developmrnt-512.png",
+    image: "https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vYmlsZSUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
     link: "/services/research-development",
   },
   {
@@ -32,6 +36,7 @@ export const solutions: Solution[] = [
     description:
       "ERP systems, AI analytics, and legacy modernization with scalable, compliant architectures.",
     icon: "https://cdn3.iconfinder.com/data/icons/web-design-development-flat-colors/48/layer-512.png",
+    image: "https://images.unsplash.com/photo-1585247226801-bc613c441316?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vYmlsZSUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
     link: "/services/cloud-solutions",
   },
 ];

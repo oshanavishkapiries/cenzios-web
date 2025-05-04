@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { general } from "@/data/general";
 import dynamic from "next/dynamic";
@@ -10,6 +10,11 @@ import heroAnimation from "@/public/hero.json";
 
 const Hero = () => {
   const { hero } = general;
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
@@ -17,17 +22,18 @@ const Hero = () => {
 
       {/* Background Layer */}
       <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black to-blue-900/50"></div>
+      <div className="absolute inset-0 w-full h-full bg-gradient-to-l from-black to-transparent"></div>
 
       {/* Content Layer */}
       <div className="relative h-full z-10">
-        <div className="myContainer h-full mx-auto px-4 flex items-center">
+        <div className="myContainer h-full mx-auto px-6 flex items-center">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
             {/* Left content */}
             <div className="flex-1  text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 {hero.title}
               </h1>
-              <p className="text-lg md:text-xl text-gray-100 mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8">
                 {hero.description}
               </p>
               <Link
@@ -40,13 +46,15 @@ const Hero = () => {
 
             {/* Right content - Lottie Animation */}
             <div className="hidden lg:flex flex-1 relative">
-              <div className="relative w-full aspect-square">
-                <Lottie
-                  animationData={heroAnimation}
-                  loop={true}
-                  autoplay={true}
-                  style={{ width: "100%", height: "100%" }}
-                />
+              <div className="relative w-full scale-100 pt-16">
+                {isClient && (
+                  <Lottie
+                    animationData={heroAnimation}
+                    loop={true}
+                    autoplay={true}
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                )}
               </div>
             </div>
           </div>
