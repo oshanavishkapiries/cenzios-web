@@ -14,8 +14,8 @@ const Footer = () => {
     <footer className="w-full m bg-gradient-to-br bg-secondary text-foreground pt-0">
       {/* Top CTA Section */}
 
-      <div className="w-full rounded-lg flex flex-col md:flex-row">
-        <div className="w-full p-10 bg-primary md:w-1/2 text-center flex flex-col justify-end items-center">
+      <div className="w-full rounded-lg flex flex-col lg:flex-row">
+        <div className="w-full p-10 bg-primary lg:w-1/2 text-center flex flex-col justify-end items-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-2 text-primary-foreground">
             Let&apos;s Connect
           </h2>
@@ -29,7 +29,7 @@ const Footer = () => {
             </span>
           </Link>
         </div>
-        <div className="w-full p-10 bg-blue-900 md:w-1/2 text-center flex flex-col justify-end items-center"> 
+        <div className="w-full p-10 bg-blue-900 lg:w-1/2 text-center flex flex-col justify-end items-center"> 
           <div className="text-primary-foreground">
             <span className="block text-sm">Email Us</span>
             <a

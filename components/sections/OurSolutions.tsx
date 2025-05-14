@@ -1,14 +1,6 @@
 import React from "react";
 import Image from "next/image";
-// import { IoAlertCircle } from "react-icons/io5";
-// import {
-//   Tooltip,
-//   TooltipContent,
-//   TooltipProvider,
-//   TooltipTrigger,
-// } from "@/components/ui/tooltip";
 import { solutions } from "@/data/solutions";
-// import { Button } from "@/components/ui/button";
 
 const OurSolutions = () => {
   return (

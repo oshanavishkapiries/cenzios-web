@@ -32,7 +32,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             {navigationData.mainLinks.map((link) => (
               <Link
                 key={link.href}
@@ -55,7 +55,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="default" size="icon">

@@ -1,11 +1,11 @@
+import { FaBolt } from "react-icons/fa";
 import {
   IoSearch,
   IoCodeSlash,
-  IoFlask,
   IoRocket,
   IoRefresh,
 } from "react-icons/io5";
-import { IoGrid } from "react-icons/io5";
+import { MdArchitecture } from "react-icons/md";
 
 export const steps = [
   {
@@ -24,7 +24,7 @@ export const steps = [
       "Our UI/UX team gets to work sketching wireframes that balance beauty and brains. Meanwhile, our engineers map out the technical backbone ensuring your app can handle tomorrow's growth today.",
     image:
       "https://media.istockphoto.com/id/2172166255/photo/a-seminar-and-workshop-on-coding-to-enhance-system-efficiency.webp?a=1&b=1&s=612x612&w=0&k=20&c=NrBD29sRqahmntvAGbeD0bLr_hDf7QHCjlPunaZf9Ic=",
-    icon: <IoGrid className="h-6 w-6" />,
+    icon: <MdArchitecture className="h-6 w-6" />,
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const steps = [
       "We thoroughly test every part of the software, using computer checks and manual reviews to catch errors and security issues. The result? A reliable, secure product that runs smoothly exactly when you need it.",
     image:
       "https://media.istockphoto.com/id/1536191188/photo/web-developers-using-a-computer-together-in-an-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=pgLU5ahKY8sj8nv4-90K4t-3vNEGAB0VM2Yex_V9aJw=",
-    icon: <IoFlask className="h-6 w-6" />,
+    icon: <FaBolt className="h-6 w-6" />,
   },
   {
     id: 5,
