@@ -28,7 +28,7 @@ const Perfection = () => {
           {steps.map((step, idx) => {
             const isEven = idx % 2 === 1;
             return (
-              <ViewportAnimation key={step.id} delay={0.2}>
+              <ViewportAnimation key={step.id}>
                 <div
                   className={`relative flex flex-col md:flex-row items-center md:justify-between ${
                     isEven ? "md:flex-row-reverse" : ""

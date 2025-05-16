@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+"use client";
+
+import { useState, useEffect } from "react";
 
 interface ScrollPosition {
   x: number;
@@ -12,6 +14,8 @@ export const useScrollPosition = (): ScrollPosition => {
   });
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const updatePosition = () => {
       setScrollPosition({
         x: window.scrollX,
@@ -19,11 +23,11 @@ export const useScrollPosition = (): ScrollPosition => {
       });
     };
 
-    window.addEventListener('scroll', updatePosition);
+    window.addEventListener("scroll", updatePosition);
     updatePosition();
 
-    return () => window.removeEventListener('scroll', updatePosition);
+    return () => window.removeEventListener("scroll", updatePosition);
   }, []);
 
   return scrollPosition;
-}; 
+};
