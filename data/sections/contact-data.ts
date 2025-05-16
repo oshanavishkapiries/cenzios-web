@@ -1,7 +1,7 @@
 export const contactData = {
   hero: {
-    title: "We are more than happy to have a conversation with you..",
-    description: "We are more than happy to have a conversation with you..",
+    title: "We’re Happy To Talk With You",
+    description: "Contact us today to discuss how we can support your business goals.",
   },
   offices: {
     title: "Our Corporate Office",
@@ -19,7 +19,7 @@ export const contactData = {
   contactInfo: {
     title: "Contact",
     email: {
-      label: "E-mail",
+      label: "E-Mail",
       addresses: ["info@cenzios.com"],
     },
     phone: {
@@ -28,21 +28,21 @@ export const contactData = {
     },
   },
   form: {
-    title: "Schedule a Free Consultation",
-    description: "Partner with Us for Comprehensive IT",
+    title: "Schedule A Free Consultation",
+    description: "Partner With Us For Comprehensive IT",
     subDescription:
       "We're happy to answer any questions you may have and help you determine which of our services best fit your needs.",
     buttonText: "Submit",
     fields: [
       {
-        label: "First name",
+        label: "First Name",
         type: "text",
         placeholder: "Enter your first name",
         required: true,
         gridCols: "col-span-1",
       },
       {
-        label: "Last name",
+        label: "Last Name",
         type: "text",
         placeholder: "Enter your last name",
         required: true,
@@ -56,7 +56,7 @@ export const contactData = {
         gridCols: "col-span-2",
       },
       {
-        label: "Company email",
+        label: "Company Email",
         type: "email",
         placeholder: "Enter your company email",
         required: true,

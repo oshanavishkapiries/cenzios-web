@@ -5,7 +5,7 @@ import WhyChooseUs from "@/components/sections/about/WhyChooseUs";
 import VisionMission from "@/components/sections/about/VisionMission";
 import SectionsHero from "@/components/sections/SectionsHero";
 import { aboutData } from "@/data/sections/about-data";
-import ViewportAnimation from "@/components/ui/ViewportAnimation";
+import ViewportAnimation from "@/components/ViewportAnimation";
 
 export default function About() {
   return (

@@ -4,38 +4,23 @@ import Image from "next/image";
 
 interface LogoProps {
   className?: string;
-  showText?: boolean;
-  size?: "sm" | "md" | "lg";
+  variant?: "b" | "w";
 }
 
-const Logo = ({ className = "", showText = true, size = "md" }: LogoProps) => {
-  const sizeClasses = {
-    sm: "w-6 h-6",
-    md: "w-8 h-8",
-    lg: "w-10 h-10",
-  };
-  const textSizeClasses = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-3xl",
-  };
+const Logo = ({ className = "", variant = "b" }: LogoProps) => {
+  const logoSrc = variant === "w" ? "/logo-w.png" : "/logo-b.png";
 
   return (
-    <Link href="/" className={`flex items-center ${className}`}>
-      <div className={`relative ${sizeClasses[size]}`}>
+    <Link href="/">
+      <div className={`relative ${className}`}>
         <Image
-          src="/logo.png"
+          src={logoSrc}
           alt="Cenzios Logo"
           fill
           className="object-contain"
           priority
         />
       </div>
-      {showText && (
-        <span className={`font-bold text-primary ${textSizeClasses[size]}`}>
-          Cenzios
-        </span>
-      )}
     </Link>
   );
 };

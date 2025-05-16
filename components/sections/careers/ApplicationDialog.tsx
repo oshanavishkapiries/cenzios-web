@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { toast } from "sonner";
 
 interface ApplicationDialogProps {
   isOpen: boolean;
@@ -39,6 +40,7 @@ export default function ApplicationDialog({
     position: position,
     resume: null as File | null,
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -57,12 +59,38 @@ export default function ApplicationDialog({
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
-    alert("Application submitted successfully!");
-    onClose();
+    setIsSubmitting(true);
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("position", formData.position);
+      if (formData.resume) {
+        formDataToSend.append("resume", formData.resume);
+      }
+
+      const response = await fetch("/api/careers", {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success("Application submitted successfully!");
+        onClose();
+      } else {
+        throw new Error(data.error || "Failed to submit application");
+      }
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      toast.error("Failed to submit application. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -87,6 +115,7 @@ export default function ApplicationDialog({
                 onChange={handleChange}
                 className="col-span-3"
                 required
+                disabled={isSubmitting}
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -101,6 +130,7 @@ export default function ApplicationDialog({
                 onChange={handleChange}
                 className="col-span-3"
                 required
+                disabled={isSubmitting}
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -112,6 +142,7 @@ export default function ApplicationDialog({
                 onValueChange={(value) =>
                   setFormData({ ...formData, position: value })
                 }
+                disabled={isSubmitting}
               >
                 <SelectTrigger className="col-span-3">
                   <SelectValue placeholder="Select position" />
@@ -137,14 +168,28 @@ export default function ApplicationDialog({
                 className="col-span-3"
                 accept=".pdf,.doc,.docx"
                 required
+                disabled={isSubmitting}
               />
             </div>
           </div>
           <DialogFooter>
-            <Button type="submit">Submit Application</Button>
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="flex items-center gap-2"
+            >
+              {isSubmitting ? (
+                <>
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  Submitting...
+                </>
+              ) : (
+                "Submit Application"
+              )}
+            </Button>
           </DialogFooter>
         </form>
       </DialogContent>
     </Dialog>
   );
-} 
+}

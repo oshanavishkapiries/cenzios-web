@@ -2,7 +2,7 @@ import SectionsHero from "@/components/sections/SectionsHero";
 import { TechStack } from "@/components/sections/TechStack";
 import { hero } from "@/data/sections/product-data";
 import ServiceComponent from "@/components/sections/services/ServiceComponent";
-import ViewportAnimation from "@/components/ui/ViewportAnimation";
+import ViewportAnimation from "@/components/ViewportAnimation";
 
 export default function Services() {
   return (

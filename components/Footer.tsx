@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { HiArrowRight } from "react-icons/hi";
 import {
   socialLinks,
   quickLinks,
@@ -23,13 +24,14 @@ const Footer = () => {
             Share Your Vision. We&apos;re Here to Listen and Transform Ideas
             into Digital Realities
           </p>
-          <Link href="/services" className="w-full md:w-1/2">
-            <span className="inline-block w-full bg-background text-primary font-semibold px-8 py-3 rounded-md shadow hover:bg-muted transition text-base md:text-lg">
-              Start the Conversation →
+          <Link href="/contact" className="w-full md:w-1/2 flex justify-center">
+            <span className="inline-flex items-center justify-center w-full max-w-xs md:max-w-md lg:max-w-lg h-12 md:h-14 lg:h-16 bg-background text-primary font-semibold px-4 md:px-8 py-3 rounded-md shadow hover:bg-muted transition text-base md:text-lg">
+              <span>Start the Conversation</span>
+              <HiArrowRight className="ml-2 w-5 h-5 md:w-6 md:h-6" />
             </span>
           </Link>
         </div>
-        <div className="w-full p-10 bg-blue-900 lg:w-1/2 text-center flex flex-col justify-end items-center"> 
+        <div className="w-full p-10 bg-blue-900 lg:w-1/2 text-center flex flex-col justify-end items-center">
           <div className="text-primary-foreground">
             <span className="block text-sm">Email Us</span>
             <a
@@ -45,9 +47,10 @@ const Footer = () => {
               {officeLocations[0].phone}
             </span>
           </div>
-          <Link href="/contact" className="w-full md:w-1/2">
-            <span className="inline-block w-full bg-background text-primary font-semibold px-8 py-3 rounded-md shadow hover:bg-muted transition text-base md:text-lg">
-              Schedule a Call →
+          <Link href="/contact" className="w-full md:w-1/2 flex justify-center">
+            <span className="inline-flex items-center justify-center w-full max-w-xs md:max-w-md lg:max-w-lg h-12 md:h-14 lg:h-16 bg-background text-primary font-semibold px-4 md:px-8 py-3 rounded-md shadow hover:bg-muted transition text-base md:text-lg">
+              <span>Schedule a Call</span>
+              <HiArrowRight className="ml-2 w-5 h-5 md:w-6 md:h-6" />
             </span>
           </Link>
         </div>
@@ -110,7 +113,7 @@ const Footer = () => {
         {/* About & Social */}
         <div className="flex flex-col h-full justify-between">
           <div>
-            <Logo size="lg" showText={true} className="mb-4" />
+            <Logo className="mb-4 w-[100px] aspect-video" />
             <p className="text-sm mb-4">{companyDescription}</p>
           </div>
           <div className="flex space-x-4 mt-4">
@@ -139,19 +142,19 @@ const Footer = () => {
               <span>©</span>
               <span>{new Date().getFullYear()}</span>
               <span className="font-medium text-foreground">
-                Cenzios Technologies
+                Cenzios (Pvt) Ltd
               </span>
             </div>
             <div className="flex items-center gap-6">
               <Link
-                href="/privacy-policy"
+                href="#"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors hover:underline"
               >
                 Privacy Policy
               </Link>
               <div className="h-4 w-px bg-border/50" />
               <Link
-                href="/terms"
+                href="#"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors hover:underline"
               >
                 Terms & Conditions

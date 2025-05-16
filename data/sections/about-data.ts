@@ -30,18 +30,18 @@ export const aboutData = {
   vision: {
     title: "Our Vision",
     description:
-      "Cenzios IT Solutions began as a vision — to redefine the digital landscape through the power of innovative, data-driven software solutions, crafted by a passionate team of young talents in Sri Lanka. What started as an idea quickly evolved into a firm built on precision, innovation, and intelligence. From day one, our mission has been to deliver strategic software solutions that not only solve real business problems but also stand the test of time. Today, with over three years of experience, we are proud to have cultivated a global client base and forged lasting business relationships. Our journey has been on a consistent upward path — and we're just getting started.",
+      "Cenzios (Pvt) Ltd began as a vision — to redefine the digital landscape through the power of innovative, data-driven software solutions, crafted by a passionate team of young talents in Sri Lanka. What started as an idea quickly evolved into a firm built on precision, innovation, and intelligence. From day one, our mission has been to deliver strategic software solutions that not only solve real business problems but also stand the test of time. Today, with over three years of experience, we are proud to have cultivated a global client base and forged lasting business relationships. Our journey has been on a consistent upward path — and we're just getting started.",
   },
 
   mission: {
     title: "Our Mission",
     description:
-      "At Cenzios IT Solutions, we help businesses unlock their full potential through cutting-edge technology and tailor-made software solutions. With a focus on innovation, precision, and collaboration, we deliver strategic digital products that drive sustainable growth and long-term success.",
+      "At Cenzios (Pvt) Ltd, we help businesses unlock their full potential through cutting-edge technology and tailor-made software solutions. With a focus on innovation, precision, and collaboration, we deliver strategic digital products that drive sustainable growth and long-term success.",
     points: [
-      "We Set Achievable Success Oriented Goals.",
-      "We Overcome Problems With Creative Solutions.",
-      "We Operate In A Strict Timeline To Deliver You The Right Product At The Right Time.",
-      "We Maintain Complete Transparency With Our Customers.",
+      "We Set Achievable Success Oriented Goals",
+      "We Overcome Problems With Creative Solutions",
+      "We Operate In A Strict Timeline To Deliver You The Right Product At The Right Time",
+      "We Maintain Complete Transparency With Our Customers",
     ],
   },
   whoWeAre: {
@@ -49,10 +49,10 @@ export const aboutData = {
     description:
       "We have a pool of extraordinary talent for each field, qualified individuals with hardworking mentality. Nova Solutions has some of the best prospects Sri Lanka has to offer.",
     points: [
-      "Experts With Years Of Industrial Experience.",
-      "State Of The Art Technology.",
-      "One Stop Shop For All Of Your Software Development Needs.",
-      "Team Working, Success Hungry Individuals.",
+      "Experts With Years Of Industrial Experience",
+      "State Of The Art Technology",
+      "One Stop Shop For All Of Your Software Development Needs",
+      "Team Working, Success Hungry Individuals",
     ],
   },
   journey: [
@@ -60,7 +60,7 @@ export const aboutData = {
       date: "2023",
       title: "Foundation",
       description:
-        "Cenzios IT Solutions was born out of a shared vision to deliver intelligent, high-impact software solutions. Founded by a team of innovative Sri Lankan tech professionals, our mission was clear from the start: to engineer strategic digital products that drive business growth and long-term success.",
+        "Cenzios (Pvt) Ltd was born out of a shared vision to deliver intelligent, high-impact software solutions. Founded by a team of innovative Sri Lankan tech professionals, our mission was clear from the start: to engineer strategic digital products that drive business growth and long-term success.",
     },
     {
       date: "2024",

@@ -67,7 +67,7 @@ export const faqData = {
     },
   ],
   contact: {
-    title: "Still have questions?",
+    title: "Still Have Questions?",
     description:
       "If you couldn't find the answer you're looking for, please contact our support team.",
     buttonText: "Contact Us",

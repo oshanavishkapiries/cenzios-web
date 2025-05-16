@@ -9,13 +9,19 @@ import { useCurrentPath } from "@/hooks/useCurrentPath";
 import { ScrollProgress } from "./eldoraui/scrollprogress";
 import Logo from "@/components/Logo";
 import ContactUsBtn from "./ContactUsBtn";
+import { useState } from "react";
 
 export default function Navigation() {
   const { y } = useScrollPosition();
   const currentPath = useCurrentPath();
+  const [isOpen, setIsOpen] = useState(false);
 
   const isScrolled = y > 5;
   const isHome = currentPath === "/";
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav
@@ -28,7 +34,10 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Logo size="md" showText={true} />
+            <Logo
+              className="w-[100px] aspect-video"
+              variant={!isHome ? "b" : isScrolled ? "b" : "w"}
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -56,7 +65,7 @@ export default function Navigation() {
 
           {/* Mobile Navigation */}
           <div className="lg:hidden flex items-center">
-            <Sheet>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="default" size="icon">
                   <FiMenu className="h-6 w-6" />
@@ -69,12 +78,17 @@ export default function Navigation() {
                       key={link.href}
                       href={link.href}
                       className="text-gray-800 hover:text-gray-600 px-3 py-2"
+                      onClick={handleLinkClick}
                     >
                       {link.label}
                     </Link>
                   ))}
 
-                  <Link href={navigationData.ctaButton.link} className="mx-3">
+                  <Link
+                    href={navigationData.ctaButton.link}
+                    className="mx-3"
+                    onClick={handleLinkClick}
+                  >
                     <ContactUsBtn />
                   </Link>
                 </div>

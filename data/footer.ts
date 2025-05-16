@@ -63,4 +63,4 @@ export const officeLocations: OfficeLocation[] = [
 ];
 
 export const companyDescription =
-  "Cenzios IT Solutions provides Application Development and Digital Solutions worldwide. As a professional IT company, we ensure the ideal balance of cost, quality, and project requirements to empower your success.";
+  "Cenzios (Pvt) Ltd provides Application Development and Digital Solutions worldwide. As a professional IT company, we ensure the ideal balance of cost, quality, and project requirements to empower your success.";

@@ -14,7 +14,9 @@ export default function SectionsHero({ title, description }: HeroProps) {
         <div className="container mx-auto p-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{title}</h1>
-            <p className="text-xs sm:text-base md:text-lg lg:text-xl opacity-90">{description}</p>
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl opacity-90">
+              {description}
+            </p>
           </div>
         </div>
       </BackgroundGradientAnimation>

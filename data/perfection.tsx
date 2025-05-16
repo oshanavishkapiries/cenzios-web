@@ -3,9 +3,9 @@ import {
   IoSearch,
   IoCodeSlash,
   IoRocket,
-  IoRefresh,
 } from "react-icons/io5";
 import { MdArchitecture } from "react-icons/md";
+import { LuContainer } from "react-icons/lu";
 
 export const steps = [
   {
@@ -51,7 +51,7 @@ export const steps = [
       "We handle seamless deployment across platforms while optimizing speed and responsiveness. Post-launch, we monitor performance and gather user insights.",
     image:
       "https://media.istockphoto.com/id/1646501089/photo/closeup-group-of-asian-people-software-developers-using-computer-to-write-code-sitting-at.webp?a=1&b=1&s=612x612&w=0&k=20&c=7OC1ykUyXbgHImSLIevBvmwvbn6K7ys0JZAyvXqf2zQ=",
-    icon: <IoRocket className="h-6 w-6" />,
+    icon: <LuContainer className="h-6 w-6" />,
   },
   {
     id: 6,
@@ -60,6 +60,6 @@ export const steps = [
       "Our partnerships do not end at launch. We offer ongoing support, iterative updates, and scalability enhancements to keep your solution ahead of the curve.",
     image:
       "https://images.unsplash.com/photo-1649451844931-57e22fc82de3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmUlMjBDb250aW51b3VzJTIwRXZvbHV0b2lvbnxlbnwwfHwwfHx8MA%3D%3D",
-    icon: <IoRefresh className="h-6 w-6" />,
+    icon: <IoRocket className="h-6 w-6" />,
   },
 ];
