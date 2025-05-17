@@ -3,20 +3,23 @@ import React, { useEffect, useState } from "react";
 import { aboutUsData } from "@/data/aboutus";
 import Counter from "../syntaxui/TextTicker";
 import dynamic from "next/dynamic";
-
-import aboutAnimation from "@/public/aboutAnimation.json";
+import { IMAGES } from "@/data/images";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Aboutus = () => {
   const [isClient, setIsClient] = useState(false);
+  const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
     setIsClient(true);
+    fetch(IMAGES.ABOUT_ANIMATION)
+    .then((response) => response.json())
+    .then((data) => setAnimationData(data))
+    .catch((error) => console.error("Error loading animation:", error));
   }, []);
 
   const getNumericValue = (value: string) => {
-    // Extract numbers from strings like "5 Years", "10+", "100%", "15+"
     const numericValue = value.replace(/[^0-9]/g, "");
     return parseInt(numericValue, 10);
   };
@@ -29,7 +32,7 @@ const Aboutus = () => {
           <div className="hidden lg:flex flex-col justify-center items-center lg:w-1/4 relative bg-gradient-to-br from-blue-600 via-blue-400 to-blue-600 rounded-xl p-4">
             {isClient && (
               <Lottie
-                animationData={aboutAnimation}
+                animationData={animationData}
                 loop={true}
                 autoplay={true}
                 style={{ width: "110%", height: "110%", objectFit: "cover" }}

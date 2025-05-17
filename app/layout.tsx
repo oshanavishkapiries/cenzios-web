@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Toaster } from "sonner";
+import { IMAGES } from "@/data/images";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -11,6 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cenzios.com"),
   title:
     "Cenzios Pvt Ltd - Strategic Software Solutions Engineered To Fuel Your Growth",
   description:
@@ -35,14 +37,13 @@ export const metadata: Metadata = {
       "Cenzios Pvt Ltd - Strategic Software Solutions Engineered To Fuel Your Growth",
     description:
       "Providing web apps, mobile apps, combo solutions, and tech outsourcing globally.",
-    images: ["/logo-b.png"],
+    images: [IMAGES.LOGO_B],
     site: "@cenzios",
     creator: "@cenzios",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: IMAGES.LOGO,
   },
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({

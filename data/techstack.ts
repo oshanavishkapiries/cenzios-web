@@ -1,42 +1,42 @@
 export const TechStackData = [
   {
     name: "React",
-    url: "/techstack/react_light.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460856/cenzios/react_light_n6bvql.svg",
   },
   {
     name: "Next.js",
-    url: "/techstack/nextjs_icon_dark.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460856/cenzios/nextjs_icon_dark_a2knpw.svg",
   },
   {
     name: "JavaScript",
-    url: "/techstack/javascript.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/javascript_qog3eb.svg",
   },
   {
     name: "Java",
-    url: "/techstack/java.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/java_qmvh9d.svg",
   },
   {
     name: "Spring",
-    url: "/techstack/spring.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460856/cenzios/spring_gx3ef6.svg",
   },
   {
     name: "Django",
-    url: "/techstack/django.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/django_lp1wnr.svg",
   },
   {
     name: "Angular",
-    url: "/techstack/angular.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/angular_yztoq7.svg",
   },
   {
     name: "Redis",
-    url: "/techstack/redis.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460856/cenzios/redis_kpxigq.svg",
   },
   {
     name: "Docker",
-    url: "/techstack/docker.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/docker_gx5a55.svg",
   },
   {
     name: "Kubernetes",
-    url: "/techstack/kubernetes.svg",
+    url: "https://res.cloudinary.com/comseeker/image/upload/v1747460854/cenzios/kubernetes_ncyggj.svg",
   },
 ];

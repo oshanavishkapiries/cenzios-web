@@ -3,43 +3,45 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { solutions } from "@/data/solutions";
 import dynamic from "next/dynamic";
+import { IMAGES } from "@/data/images";
 
-import animation1 from "@/public/web-dev.json";
-import animation2 from "@/public/mobile-dev.json";
-import animation3 from "@/public/software-dev.json";
-import animation4 from "@/public/system.json";
-
-// Dynamically import Lottie with no SSR
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-
-const animationData = [
-  {
-    animation: animation1,
-    height: "75%",
-    width: "75%",
-  },
-  {
-    animation: animation2,
-    height: "50%",
-    width: "50%",
-  },
-  {
-    animation: animation3,
-    height: "75%",
-    width: "75%",
-  },
-  {
-    animation: animation4,
-    height: "60%",
-    width: "60%",
-  },
-];
 
 const ServiceComponent = () => {
   const [isClient, setIsClient] = useState(false);
+  const [animationData, setAnimationData] = useState([
+    { animation: null, height: "75%", width: "75%" },
+    { animation: null, height: "50%", width: "50%" },
+    { animation: null, height: "75%", width: "75%" },
+    { animation: null, height: "60%", width: "60%" },
+  ]);
 
   useEffect(() => {
     setIsClient(true);
+    const animationUrls = [
+      IMAGES.WEB_DEV_ANIMATION,
+      IMAGES.MOBILE_DEV_ANIMATION,
+      IMAGES.SOFTWARE_DEV_ANIMATION,
+      IMAGES.SYSTEM_ANIMATION,
+    ];
+
+    Promise.all(
+      animationUrls.map((url) =>
+        fetch(url)
+          .then((response) => response.json())
+          .catch((error) => {
+            console.error("Error loading animation:", error);
+            return null;
+          })
+      )
+    ).then((data) => {
+      setAnimationData((prev) =>
+        prev.map((item, index) => ({
+          ...item,
+          animation: data[index],
+        }))
+      );
+    });
   }, []);
 
   return (
@@ -65,7 +67,7 @@ const ServiceComponent = () => {
             >
               {/* Lottie animation as background */}
               <div className="absolute inset-0 w-full h-full flex items-center justify-center pb-20 bg-gray-900 transition-colors duration-300 group-hover:bg-gray-800">
-                {isClient && (
+                {isClient && animationData[index].animation && (
                   <Lottie
                     animationData={animationData[index].animation}
                     loop={true}

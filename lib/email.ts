@@ -8,8 +8,6 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true,
-  logger: true,
-  debug: true,
 });
 
 export const sendContactFormEmail = async (formData: {

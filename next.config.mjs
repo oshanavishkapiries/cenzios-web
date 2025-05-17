@@ -4,31 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'cdn3.iconfinder.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'novasolutionsteam.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'avatar.vercel.sh',
-      },
-      {
-        protocol: 'https',
-        hostname: 'syntelligenceit.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'media.istockphoto.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'plus.unsplash.com',
       },
     ],
   },

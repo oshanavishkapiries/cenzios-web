@@ -6,14 +6,19 @@ import { general } from "@/data/general";
 import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-import heroAnimation from "@/public/hero.json";
+import { IMAGES } from "@/data/images";
 
 const Hero = () => {
   const { hero } = general;
   const [isClient, setIsClient] = useState(false);
+  const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
     setIsClient(true);
+    fetch(IMAGES.HERO_ANIMATION)
+      .then((response) => response.json())
+      .then((data) => setAnimationData(data))
+      .catch((error) => console.error("Error loading animation:", error));
   }, []);
 
   return (
@@ -47,9 +52,9 @@ const Hero = () => {
             {/* Right content - Lottie Animation */}
             <div className="hidden lg:flex flex-1 relative">
               <div className="relative w-full scale-100 pt-16">
-                {isClient && (
+                {isClient && animationData && (
                   <Lottie
-                    animationData={heroAnimation}
+                    animationData={animationData}
                     loop={true}
                     autoplay={true}
                     style={{ width: "100%", height: "100%" }}
