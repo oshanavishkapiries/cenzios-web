@@ -1,7 +1,16 @@
 import nodemailer from "nodemailer";
 
-// Define interfaces for type safety
-interface ContactFormData {
+const transporter = nodemailer.createTransport({
+  auth: {
+    user: process.env.NEXT_PUBLIC_EMAIL_USER,
+    pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+  },
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+});
+
+export const sendContactFormEmail = async (formData: {
   "first-name": string;
   "last-name": string;
   "company-/-organization": string;
@@ -9,34 +18,9 @@ interface ContactFormData {
   phone: string;
   "how-can-we-help-you?": string;
   message: string;
-}
-
-interface JobApplicationData {
-  name: string;
-  email: string;
-  position: string;
-  resume: File | null;
-}
-
-// Create transporter with environment variables (remove NEXT_PUBLIC_ prefix)
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.NEXT_PUBLIC_EMAIL_USER,
-    pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
-  },
-});
-
-// Validate environment variables
-if (!process.env.EMAIL_USER || !process.env.NEXT_PUBLIC_EMAIL_PASS || !process.env.NEXT_PUBLIC_CONTACT_FORM_RECIPIENT_EMAIL || !process.env.NEXT_PUBLIC_CAREERS_RECIPIENT_EMAIL) {
-  throw new Error("Missing required email environment variables");
-}
-
-export const sendContactFormEmail = async (formData: ContactFormData) => {
+}) => {
   const mailOptions = {
-    from: `"Contact Form" <${process.env.NEXT_PUBLIC_EMAIL_USER}>`,
+    from: process.env.NEXT_PUBLIC_EMAIL_USER,
     to: process.env.NEXT_PUBLIC_CONTACT_FORM_RECIPIENT_EMAIL,
     subject: "New Contact Form Submission",
     html: `
@@ -56,29 +40,42 @@ export const sendContactFormEmail = async (formData: ContactFormData) => {
     return { success: true };
   } catch (error) {
     console.error("Error sending contact form email:", error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : "Failed to send email"
-    };
+    return { success: false, error };
   }
 };
 
-export const sendJobApplicationEmail = async (formData: JobApplicationData) => {
+export const sendJobApplicationEmail = async (formData: {
+  name: string;
+  email: string;
+  position: string;
+  resume: File | null;
+}) => {
+  let resumeBuffer: Buffer | null = null;
+
+  if (formData.resume) {
+    const arrayBuffer = await formData.resume.arrayBuffer();
+    resumeBuffer = Buffer.from(arrayBuffer);
+  }
+
   const mailOptions = {
-    from: `"Job Application" <${process.env.NEXT_PUBLIC_EMAIL_USER}>`,
-    to: process.env.NEXT_PUBLIC_CAREERS_RECIPIENT_EMAIL,
+    from: process.env.EMAIL_USER,
+    to: process.env.CAREERS_RECIPIENT_EMAIL,
     subject: `New Job Application: ${formData.position}`,
     html: `
       <h2>New Job Application</h2>
       <p><strong>Name:</strong> ${formData.name}</p>
       <p><strong>Email:</strong> ${formData.email}</p>
       <p><strong>Position:</strong> ${formData.position}</p>
-      <p><strong>Resume:</strong> ${formData.resume ? 'Attached' : 'Not provided'}</p>
+      <p><strong>Resume:</strong> Attached</p>
     `,
-    attachments: formData.resume ? [{
-      filename: formData.resume.name,
-      content: Buffer.from(await formData.resume.arrayBuffer()),
-    }] : [],
+    attachments: resumeBuffer
+      ? [
+          {
+            filename: formData.resume!.name,
+            content: resumeBuffer,
+          },
+        ]
+      : [],
   };
 
   try {
@@ -86,9 +83,6 @@ export const sendJobApplicationEmail = async (formData: JobApplicationData) => {
     return { success: true };
   } catch (error) {
     console.error("Error sending job application email:", error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : "Failed to send email"
-    };
+    return { success: false, error };
   }
 };
