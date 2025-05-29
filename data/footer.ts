@@ -46,7 +46,7 @@ export const exploreLinks: NavigationLink[] = [
   { name: "Services", href: "/services" },
   { name: "Portfolio", href: "/portfolio" },
   { name: "FAQ", href: "/faq" },
-  { name: "Service Request", href: "/service-request" },
+  { name: "Service Request", href: "/services" },
 ];
 
 export const officeLocations: OfficeLocation[] = [

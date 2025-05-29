@@ -10,6 +10,7 @@ export const navigationData = {
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Services" },
     { href: "/faq", label: "FAQ" },
+    { href: "/portfolio", label: "Portfolio" },
     { href: "/careers", label: "Careers" },
   ],
   ctaButton: {
