@@ -47,7 +47,7 @@ export const aboutData = {
   whoWeAre: {
     title: "Who We Are",
     description:
-      "We have a pool of extraordinary talent for each field, qualified individuals with hardworking mentality. Nova Solutions has some of the best prospects Sri Lanka has to offer.",
+      "We have a pool of extraordinary talent for each field, qualified individuals with hardworking mentality. Cenzios has some of the best prospects Sri Lanka has to offer.",
     points: [
       "Experts With Years Of Industrial Experience",
       "State Of The Art Technology",
