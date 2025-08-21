@@ -1,0 +1,31 @@
+{
+    "name": "Cenzios Pvt Ltd - Software Development Company",
+    "short_name": "Cenzios",
+    "description": "Strategic Software Solutions Engineered To Fuel Your Growth",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3b82f6",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/logo-b.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/logo-b.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "business",
+        "productivity",
+        "technology"
+    ],
+    "lang": "en",
+    "dir": "ltr"
+}
