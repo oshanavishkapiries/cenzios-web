@@ -4,7 +4,8 @@ import Script from "next/script";
 
 interface StructuredDataProps {
   type: "organization" | "website" | "service" | "contact";
-  data?: any;
+  data?: Record<string, any>;
+
 }
 
 const StructuredData = ({ type, data }: StructuredDataProps) => {

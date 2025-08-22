@@ -5,7 +5,6 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Toaster } from "sonner";
 import { IMAGES } from "@/data/images";
 import StructuredData from "@/components/StructuredData";
-import PerformanceMonitor from "@/components/PerformanceMonitor";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const poppins = Poppins({
@@ -113,7 +112,6 @@ export default function RootLayout({
       <body className={`antialiased ${poppins.className} relative`}>
         <StructuredData type="organization" />
         <StructuredData type="website" />
-        <PerformanceMonitor />
         <GoogleAnalytics />
         {children}
         <FloatingWhatsApp />
